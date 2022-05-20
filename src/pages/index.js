@@ -5,8 +5,12 @@ import Layout from "../components/Layout/Layout";
 import SearchInput from "../components/SearchInput/SearchInput";
 import styles from "../styles/Home.module.css";
 
+import dim from './useWindowDimensions.js';
+
 export default function Home({ countries }) {
   const [keyword, setKeyword] = useState("");
+
+  const { height, width } = dim();
 
   const filteredCountries = countries.filter(
     (country) =>
@@ -22,6 +26,8 @@ export default function Home({ countries }) {
   };
 
   return (
+
+
     <Layout>
       <div className={styles.inputContainer}>
         <div className={styles.counts}>Found {countries.length} countries</div>
