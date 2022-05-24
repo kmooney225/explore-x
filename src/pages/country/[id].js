@@ -66,14 +66,14 @@ const Country = ({ country }) => {
             <div className={styles.details_panel_row}>
               <div className={styles.details_panel_label}>Languages</div>
               <div className={styles.details_panel_value}>
-                {country.languages.map(({ name }) => name).join(", ")}
+                {country.languages?.map(({ name }) => name).join(", ")}
               </div>
             </div>
 
             <div className={styles.details_panel_row}>
               <div className={styles.details_panel_label}>Currencies</div>
               <div className={styles.details_panel_value}>
-                {country.currencies.map(({ name }) => name).join(", ")}
+                {country.currencies?.map(({ name }) => name).join(", ")}
               </div>
             </div>
 
@@ -95,7 +95,7 @@ const Country = ({ country }) => {
               </div>
 
               <div className={styles.details_panel_borders_container}>
-                {borders.map(({ name }) => name ).join(", ")}
+                {borders?.map(({ name }) => name ).join(", ")}
               </div>
             </div>
           </div>
