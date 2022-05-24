@@ -15,7 +15,7 @@ const Country = ({ country }) => {
 
   const getBorders = async () => {
     const borders = await Promise.all(
-      country.borders.map((border) => getCountry(border))
+      country.borders?.map((border) => getCountry(border))
     );
 
     setBorders(borders);
