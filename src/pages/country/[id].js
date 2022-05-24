@@ -95,9 +95,7 @@ const Country = ({ country }) => {
               </div>
 
               <div className={styles.details_panel_borders_container}>
-                {borders.map(({ flag }) => (
-                    <img src={flag}></img>
-                ))}
+                {borders.map(({ name }) => name ).join(", ")}
               </div>
             </div>
           </div>
