@@ -4,10 +4,12 @@ import CountriesTable from "../components/CountriesTable/CountriesTable";
 import Layout from "../components/Layout/Layout";
 import SearchInput from "../components/SearchInput/SearchInput";
 import styles from "../styles/Home.module.css";
-
+import dynamic from 'next/dynamic';
 import dim from './useWindowDimensions.js';
 
 export default function Home({ countries }) {
+  let Globe = () => null;
+  if (typeof window !== 'undefined') Globe = require('react-globe.gl').default;
   const [keyword, setKeyword] = useState("");
 
   const { height, width } = dim();
@@ -29,6 +31,8 @@ export default function Home({ countries }) {
 
 
     <Layout>
+
+
       <div className={styles.inputContainer}>
         <div className={styles.counts}>Found {countries.length} countries</div>
 
