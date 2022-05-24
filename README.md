@@ -1,6 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Explore-x
+
+![explore1](https://user-images.githubusercontent.com/37048222/170052461-c9473520-8537-4cc4-8623-c93c93589b27.png)
+![xplore2](https://user-images.githubusercontent.com/37048222/170052489-50c1fd76-3e9b-481b-9c84-2173b2e4f088.png)
+
+## Intro
+This is an app that allows one access to different statistics around the world. You can look up any country using the search engine or the 3D globe and find different statistcs.
+
+- Credit: Search Engine tutorial using Next.js: https://www.youtube.com/watch?v=v8o9iJU5hEA&t=101s
+- Todo: Add React-Globe.gl and features to the project to add a 3D element
+
+## Features
+
+- Search Engine (using RestCountries API)
+- 3D globe (using React-Globe.gl)
+
+
+## Lesson
+
+- How to use Next.js
+- Learning more about React.js
+- Implementating Rest API's
+
+
+
+
 
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 
 First, run the development server:
 
